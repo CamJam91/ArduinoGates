@@ -1,0 +1,3 @@
+*If we want to reference the half adder circuit it is supplied in the circuits folder*
+
+our half adder takes two inputs: inA & inB and has two outputs: outSum & outCarry. In terms of our breadboard these two inputs are our two buttons and our carry and sum leds. The half adder uses two logic gates: xor & and.
