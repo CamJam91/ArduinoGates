@@ -1,2 +1,10 @@
 # ArduinoGates
 This is a project for creating logic gates and implimenting them in projects like adders using a breadboard with leds. Instead of using transistors we use only leds, wires and arduino code.
+
+We write this project in C++ code that the arduino works so well with. The code is written in the .ino format. Arduino has its library at our disposal and we will find a few things from this useful these include:
+
+# The loop() function: everything we want to do on our breadboard will go in this function. It ensures that our Arduino is constantly looping through and checking for output. 
+# Pin assignment: when we want to assign some variable to a pin whether it be for input or output we can just use basic int assignment for example: {pinA = 1,} will assign the actual physical pin 1 to a variable named pinA. This looks like normal variable assignment but with our third useful Arduino function will operate in a special way. *That being said it's best to leave comments for ourselves so wecan see what pins are being assigned to*
+# pinMode (case sensitive): since our pins can read and write we must declare exactly what we want our pins to be. pinMode takes 2 arguments: our variable (such as the above variable pinA that will read or write to the actual physical pin 1 on the board) & the IO type INPUT or OUTPUT (case sensitive), this will allow us to take in electricity or output it to do cool things on our breadboard\
+
+Let's get into it. There are other notes that document what is going on with specific functions and codes we write. One important thing to remember is that this project relies on a physical medium (the breadboard) and it is very important to keep that in mind when troubleshooting. It very well could be the case that our code is fine and we've just got some wonky stuff going on with the wire. 
